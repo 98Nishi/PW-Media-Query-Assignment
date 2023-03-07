@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img:hover {
+  cursor:pointer;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color:  #111827;
+  color: #fff;
+}
+nav{
+  display: flex;
+  justify-content:space-between;
+  margin: 20px;
+}
+nav ul {
+    display :flex;
+    flex-direction: row; 
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    list-style-type: none;
+}
+ nav img {
+  width:22px;
+  display:none;
+}
+.list-item:hover{
+  flex-direction: row;
+  padding: 5px 10px;
+  background: #6464e0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  gap: 30px;
+  max-width: 100vw;
+}
+.hero-left-side {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  font-size: 28px;
+  gap: 10px;
+  max-width: 100vw;
+  margin-left: 10px;
+  margin: 20px;
+}
+.hand img{
+  height: 45px;
+  margin-left: 10px;
+  
+}
+.hand,h3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+  flex-direction: row;
+  margin-right:100px;
+}
+.myself {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.myself h1 {
+  font-size: 60px;
+}
+ .myself h2 {
+  font-size: 38px;
+  color: #c5c559;
+}
+.hero-right-side img {
+  width: 32vw;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.projects h1{
+  cursor: pointer;
+  font-size: 40px;
+}
+.horizontal-line {
+  width: 145px;
+  height: 10px;
+  margin-bottom: 20px;
+  background-color: blue;
+  border-radius: 15px; 
+}
+.project-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+img[alt="image"]{
+  width: 20vw;
+}
+.project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us {
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+}
+.contact-us h1 {
+  cursor: pointer;
+  font-size: 40px;
+}
+.horizontal-line-2 {
+  width: 199px;
+  height: 10px;
+  margin-bottom: 20px;
+  margin-top: 2px;
+  background-color: blue;
+  border-radius: 20px; 
+}
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+img[alt="github"]{
+  width: 30px;
+  cursor: pointer;
+}
+img[alt="linkedin"]{
+  width: 30px;
+  cursor: pointer;
+}
+img[alt="outlook"]{
+  width: 30px;
+  cursor: pointer;
+}
+
+/*----Css for small screen----*/
+@media screen and (max-width:600px) {
+  nav ul{
+      display: none;
+  }
+  nav img {
+    width:22px;
+    display:block;
+  }
+img [alt="menu"]{
+  display: block;
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+}
+.hand,h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  flex-direction: row;
+  margin-right:0
+}
+.myself h1 {
+  font-size: 40px;
+}
+.myself h2 {
+  font-size: 29px;
+  text-align: center;
+}
+img [alt="pc-img"]{
+   width: 65vw;
+}
+.project-img {
+  display:grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  column-gap: 20px; 
+}
+img [alt="image"]{
+  width: 58vw;
+}
+.projects h1 {
+  font-size: 37px;
+}
+.contact-us h1 {
+  font-size: 37px;
+}
+.horizontal-line-2 {
+  margin-bottom: 20px;
+  height: 10px;
+  width: 180px;
+  border-radius: 20px;
+  background-color: blue;
+}
+}
